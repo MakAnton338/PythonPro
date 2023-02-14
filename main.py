@@ -22,10 +22,6 @@ if __name__ == '__main__':
     assert parse('https://example.com/path/to/page?name=ferret&?color=purple') == {'name': 'ferret', '?color': 'purple'}
     assert parse('?name=ferret&color=purple?') == {'name': 'ferret', 'color': 'purple?'}
 
-def parse_cookie(query: str) -> dict:
-    return {}
-
-
 if __name__ == '__main__':
     assert parse_cookie('name=Dima;') == {'name': 'Dima'}
     assert parse_cookie('') == {}
