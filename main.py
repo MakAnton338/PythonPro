@@ -1,3 +1,5 @@
+from urllib.parse import parse_qsl, urlparse
+
 def parse(url: str) -> dict:
     return {}
 
